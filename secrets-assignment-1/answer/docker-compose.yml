@@ -4,6 +4,8 @@ services:
 
   drupal:
     image: drupal:8.8.2
+    deploy:
+      replicas: 1
     ports:
       - "8080:80"
     volumes:
